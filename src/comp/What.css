@@ -1,0 +1,139 @@
+.container1 {
+  margin: 0 14rem;
+}
+
+.what-we {
+  height: 100%;
+  /* position: fixed; */
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+#img1 {
+  height: 80%;
+  /* position: fixed; */
+  width: 80%;
+  margin-right: -300px;
+}
+
+.what-we h1 {
+  font-size: 64px;
+}
+.down {
+  color: black;
+  cursor: pointer;
+}
+
+.down:hover {
+  color: #ffae00;
+  transition: 0.2s;
+}
+
+.img-mobile {
+  display: none;
+}
+@media screen and (min-width: 1241px) and (max-width: 1700px) {
+  .what-we h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 1240px) {
+  .container1 {
+    margin: 0 5rem;
+    margin-top: 80px;
+  }
+  .what-we h1 {
+    font-size: 55px;
+  }
+  .what-we {
+    height: 100%;
+    /* position: fixed; */
+    width: 100%;
+    object-fit: contain;
+    align-items: center;
+    display: block;
+    text-align: center;
+    justify-content: center;
+  }
+  #img2 {
+    height: 500px;
+    /* position: fixed; */
+    width: 500px;
+  }
+  #img1 {
+    display: none;
+  }
+  .img-mobile {
+    display: block;
+  }
+}
+@media screen and (max-width: 641px) {
+  .container1 {
+    margin: 0 5rem;
+    margin-top: 80px;
+  }
+  .what-we h1 {
+    font-size: 50px;
+  }
+}
+@media screen and (max-width: 605px) {
+  #img2 {
+    height: 400px;
+    /* position: fixed; */
+    width: 400px;
+  }
+  .img-mobile {
+    margin-bottom: -90px;
+  }
+}
+@media screen and (max-width: 597px) {
+  .container1 {
+    margin: 0 5rem;
+    margin-top: 80px;
+  }
+  .what-we h1 {
+    font-size: 40px;
+  }
+  #img {
+    margin-left: -20px;
+  }
+}
+@media screen and (max-width: 511px) {
+  .container1 {
+    margin: 0 5rem;
+    margin-top: 80px;
+  }
+  .what-we h1 {
+    font-size: 30px;
+  }
+  #img2 {
+    height: 300px;
+    /* position: fixed; */
+    width: 300px;
+  }
+}
+@media screen and (max-width: 428px) {
+  .container1 {
+    margin: 0 5rem;
+    margin-top: 80px;
+  }
+  .what-we h1 {
+    font-size: 25px;
+  }
+  #img2 {
+    height: 200px;
+    /* position: fixed; */
+    width: 200px;
+  }
+}
+@media screen and (max-width: 387px) {
+  .container1 {
+    margin: 0 5rem;
+    margin-top: 80px;
+  }
+  .what-we h1 {
+    font-size: 20px;
+  }
+}

@@ -1,0 +1,60 @@
+.mission-container {
+  margin-bottom: 250px;
+  width: 100%;
+}
+
+.imagecontainer {
+  display: flex;
+  justify-content: center;
+  margin-bottom: 100px;
+}
+#img4 {
+  width: 100%;
+}
+.margin {
+  margin: 0 14rem;
+}
+.mission-text {
+  display: flex;
+  justify-content: space-between;
+}
+.mission-para {
+  width: 50%;
+  font-size: 20px;
+  line-height: 2;
+}
+.mission-header {
+  font-size: 60px;
+}
+@media screen and (max-width: 1240px) {
+  .mission-container {
+    margin: 0 0rem;
+  }
+  .mission-text {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .mission-para {
+    margin-top: 80px;
+    width: 100%;
+    font-size: 20px;
+  }
+  .margin {
+    margin: 0 3rem;
+  }
+  .mission-header {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 448px) {
+  .margin {
+    margin: 0 1.5rem;
+  }
+  .mission-container {
+    margin: 0 0rem;
+  }
+  .mission-header {
+    font-size: 35px;
+  }
+}

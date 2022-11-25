@@ -1,0 +1,119 @@
+.header {
+  position: relative;
+  height: 70px;
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 3rem;
+  z-index: 10;
+  position: sticky;
+  top: 0;
+}
+.header.active6 {
+  transform: 0.3s ease-in-out;
+  background-color: white;
+  box-shadow: 1px 0px 1px 0px #1e1e1e;
+}
+.menu {
+  display: flex;
+}
+.menu li {
+  padding: 0 1rem;
+}
+.menu a {
+  font-size: 1.5rem;
+  font-weight: 500;
+}
+.menu a::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #000;
+  transition: width 0.3s;
+}
+
+.menu a:hover::after {
+  width: 100%;
+}
+.hamburger {
+  display: none;
+}
+@media screen and (max-width: 1240px) {
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    border: 2px solid black;
+    width: 60px;
+    height: 55px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  .hamburger:hover {
+    background-color: black;
+    color: white;
+    transition: 0.3s;
+  }
+
+  .menu {
+    position: absolute;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    top: 0;
+    left: -100%;
+    opacity: 0;
+    text-align: center;
+    width: 100%;
+    height: 100vh;
+    overflow-y: hidden;
+
+    z-index: -1;
+    background: #ffae00;
+    background-size: cover;
+  }
+
+  .menu li {
+    padding: 1rem 0;
+  }
+  .menu a {
+    font-size: 32px;
+  }
+  .menu.active {
+    opacity: 1;
+    transition: 0.3s;
+    position: fixed;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    overflow: hidden;
+  }
+}
+@media screen and (max-width: 640px) {
+  .header {
+    padding: 2rem;
+  }
+}
+@media screen and (max-width: 490px) {
+  .hamburger {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 8px;
+    border: 1px solid #1e1e1e;
+    width: 60px;
+    height: 55px;
+    border-radius: 100%;
+    cursor: pointer;
+  }
+  .navbarheader {
+    font-size: 20px;
+  }
+  .navbartext {
+    font-size: 15px;
+    font-weight: lighter;
+  }
+}

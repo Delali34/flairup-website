@@ -1,0 +1,245 @@
+.mobile-version {
+  display: none;
+}
+@media screen and (max-width: 1240px) {
+  .mobile-version {
+    display: flex;
+    justify-content: center;
+    margin: 0 5rem;
+  }
+  .mobile-buttons {
+    display: flex;
+    justify-content: space-between;
+    position: relative;
+    align-items: center;
+  }
+
+  .mobile-buttons button {
+    border: none;
+    background-color: #ffffff;
+    cursor: pointer;
+  }
+  .mobile-buttons button::after {
+    display: none;
+  }
+  .rule {
+    height: 100%;
+    /* position: fixed; */
+    width: 100%;
+    object-fit: contain;
+    align-items: center;
+    display: block;
+    justify-content: center;
+  }
+  .unearth {
+    display: inline-block;
+  }
+
+  .unearth::after {
+    content: "";
+    display: block;
+    width: 0;
+    height: 4px;
+    background: #ffae00;
+    transition: width 0.3s;
+  }
+  .unearth:after {
+    width: 100%;
+  }
+  #second {
+    height: 500px;
+    /* position: fixed; */
+    width: 900px;
+    margin-left: -50px;
+    margin-top: -30px;
+  }
+  #third {
+    height: 500px;
+    /* position: fixed; */
+    width: 900px;
+    margin-left: -50px;
+    margin-top: -30px;
+  }
+  #fourth {
+    height: 500px;
+    /* position: fixed; */
+    width: 900px;
+    margin-left: -50px;
+    margin-top: -30px;
+  }
+  #fifth {
+    height: 500px;
+    /* position: fixed; */
+    width: 900px;
+    margin-left: -50px;
+    margin-top: -30px;
+  }
+  .second {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 100px;
+    align-items: center;
+  }
+  .second p {
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .mobile-button {
+    display: flex;
+    justify-content: space-between;
+    gap: 2%;
+  }
+  .container2 {
+    margin: 0 5rem;
+
+    margin-bottom: 80px;
+  }
+  .first-text {
+    height: 100%;
+    /* position: fixed; */
+    width: 100%;
+    object-fit: contain;
+    display: none;
+    justify-content: center;
+    align-items: center;
+  }
+  #firstimg {
+    height: 600px;
+    width: 1000px;
+    padding-left: 180px;
+    margin-top: -60px;
+  }
+  .texting {
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+  .active1 {
+    display: none;
+  }
+  .toggleStyle {
+    display: none;
+  }
+  .mySwiper {
+    display: block;
+  }
+}
+@media screen and (max-width: 641px) {
+  .mobile-version {
+    margin: 0 3rem;
+  }
+  #fifth {
+    height: 300px;
+    /* position: fixed; */
+    width: 500px;
+    margin-left: 50px;
+    margin-top: -30px;
+    margin-bottom: 50px;
+  }
+  #fourth {
+    height: 400px;
+    /* position: fixed; */
+    width: 700px;
+    margin-left: 0px;
+    margin-top: -30px;
+    margin-bottom: 40px;
+  }
+  #third {
+    height: 400px;
+    /* position: fixed; */
+    width: 700px;
+    margin-left: 100px;
+    margin-top: -30px;
+  }
+  #second {
+    height: 400px;
+    /* position: fixed; */
+    width: 700px;
+    margin-left: 0px;
+    margin-top: -30px;
+  }
+}
+@media screen and (max-width: 511px) {
+  #fifth {
+    height: 250px;
+    /* position: fixed; */
+    width: 400px;
+    margin-left: 0px;
+    margin-top: -0px;
+    margin-bottom: 50px;
+  }
+  #fourth {
+    height: 300px;
+    /* position: fixed; */
+    width: 550px;
+    margin-left: 0px;
+    margin-top: -30px;
+    margin-bottom: 40px;
+  }
+  #third {
+    height: 350px;
+    /* position: fixed; */
+    width: 600px;
+    margin-left: 50px;
+    margin-top: -30px;
+  }
+  #second {
+    height: 300px;
+    /* position: fixed; */
+    width: 500px;
+    margin-left: 0px;
+    margin-top: -30px;
+  }
+  .second p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}
+@media screen and (max-width: 428px) {
+  .unearth {
+    font-size: 18px;
+  }
+  .mobile-version {
+    margin: 0 1rem;
+  }
+}
+@media screen and (max-width: 411px) {
+  #fifth {
+    height: 200px;
+    /* position: fixed; */
+    width: 300px;
+    margin-left: 0px;
+    margin-top: -0px;
+    margin-bottom: 50px;
+  }
+  #fourth {
+    height: 300px;
+    /* position: fixed; */
+    width: 550px;
+    margin-left: 0px;
+    margin-top: -30px;
+    margin-bottom: 40px;
+  }
+  #third {
+    height: 250px;
+    /* position: fixed; */
+    width: 400px;
+    margin-left: 50px;
+    margin-top: -30px;
+  }
+  #second {
+    height: 250px;
+    /* position: fixed; */
+    width: 400px;
+    margin-left: 0px;
+    margin-top: -30px;
+  }
+  .second p {
+    font-size: 18px;
+    font-weight: 400;
+    line-height: 1.5;
+  }
+}

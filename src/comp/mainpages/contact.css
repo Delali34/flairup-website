@@ -1,0 +1,145 @@
+.container-contact {
+  background-color: #1e1e1e;
+}
+input {
+  width: 100%;
+  height: 70px;
+  background-color: #1e1e1e;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 2px;
+  font-size: 20px;
+  padding-left: 20px;
+  color: white;
+}
+textarea {
+  width: 100%;
+  height: 130px;
+  background-color: #1e1e1e;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 2px;
+  font-size: 20px;
+  padding-left: 20px;
+  padding-top: 20px;
+  color: white;
+}
+.container-contact2 {
+  margin: 0rem 14rem;
+  padding-bottom: 10rem;
+}
+select {
+  width: 100%;
+  height: 70px;
+  background-color: #1e1e1e;
+  border: 1px solid rgb(215, 215, 215);
+  border-radius: 2px;
+  color: white;
+}
+.file {
+  border: none;
+}
+.category {
+  font-size: 20px;
+  color: gray;
+  padding-left: 20px;
+}
+.contact-title {
+  font-size: 80px;
+  color: white;
+  padding-top: 100px;
+  padding-bottom: 70px;
+}
+.email {
+  padding-top: 30px;
+}
+.category2 {
+  padding-top: 30px;
+}
+.textarea2 {
+  padding-top: 30px;
+}
+#file-upload-button {
+  display: none;
+}
+input[type="file"] {
+  border: none;
+}
+input[type="submit"] {
+}
+.custom-file-upload {
+  margin-top: 20px;
+  display: inline-block;
+  padding: 6px 12px;
+  cursor: pointer;
+  color: white;
+  font-size: 30px;
+}
+.uploads {
+  display: flex;
+  justify-content: space-between;
+}
+form .custom-file-upload .file-selected {
+  font-size: 16px;
+  margin-top: 10px;
+}
+input[type="submit"] {
+  width: 150px;
+  height: 60px;
+  background-color: white;
+  text-align: center;
+  border: none;
+  color: black;
+  padding: 16px 32px;
+  text-decoration: none;
+  margin: 20px 2px;
+  cursor: pointer;
+  border-radius: 50px;
+}
+input[type="submit"]:hover {
+  background-color: #1e1e1e;
+  color: white;
+  border: 1px solid white;
+  transition: 0.3s ease-in;
+}
+#file-upload-filename {
+  color: white;
+}
+@media screen and (max-width: 1700px) {
+  .container-contact2 {
+    margin: 0 3rem;
+  }
+  .contact-title {
+    font-size: 60px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .container-contact2 {
+    margin: 0 1.5rem;
+  }
+  .contact-title {
+    font-size: 30px;
+  }
+  input[type="submit"] {
+    width: 120px;
+    height: 40px;
+
+    padding: 4px 8px;
+  }
+  .custom-file-upload {
+    padding: 6px 12px;
+
+    font-size: 25px;
+  }
+  .uploads {
+    flex-direction: column;
+    justify-content: center;
+  }
+  input {
+    font-size: 15px;
+  }
+  textarea {
+    font-size: 15px;
+  }
+  .category {
+    font-size: 15px;
+  }
+}

@@ -1,0 +1,197 @@
+.workbackground {
+  margin: 0 18rem;
+}
+
+.container-img {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 130px;
+  margin-bottom: 150px;
+}
+.image-card {
+  border-radius: 2px;
+  cursor: pointer;
+}
+.image {
+  width: 100%;
+}
+
+.image-card2 {
+  /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.image-card2 img {
+  transition: 0.5s ease;
+  border: 1px solid #dedede;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.image-card img:hover {
+  transform: scale(1.3);
+}
+/* .tags2 {
+  margin: 0 18rem;
+} */
+.workheading {
+  text-align: left;
+  color: #1e1e1e;
+  font-size: 40px;
+  margin-bottom: 120px;
+  padding-top: 70px;
+}
+.tag-button {
+  outline: none;
+  border: none;
+  background: #fff;
+  color: #1e1e1e;
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.2s ease-in;
+}
+.tag-button:hover {
+  opacity: 1;
+}
+.tagactivebutton {
+  outline: none;
+  border: none;
+  background: #fff;
+  color: #1e1e1e;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  opacity: 1;
+}
+.tag-buttons2 {
+  display: flex;
+  gap: 10%;
+  padding: 10px;
+  margin-bottom: 70px;
+}
+.textundertext {
+  text-align: center;
+  font-size: 70px;
+  opacity: 0;
+  transition: 00.3s ease-in;
+  color: transparent;
+  -webkit-text-stroke: 1px #1e1e1e;
+  cursor: pointer;
+}
+.activetagbutton {
+  text-align: center;
+  font-size: 70px;
+  opacity: 1;
+  transition: 00.3s ease-in;
+  color: transparent;
+  -webkit-text-stroke: 1px #1e1e1e;
+}
+.tag-button:hover + .textundertext {
+  opacity: 1;
+  transform: rotateZ(360deg);
+}
+
+.tag-button::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffae00;
+  transition: width 0.3s;
+}
+.tagactivebutton::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #ffae00;
+  transition: width 0.3s;
+}
+.tag-button:hover::before {
+  width: 100%;
+}
+
+@media screen and (max-width: 1350px) {
+  .workbackground {
+    margin: 0 8rem;
+  }
+  .container-img {
+    gap: 70px;
+  }
+
+  /* .tags2 {
+    margin: 0 5rem;
+  } */
+
+  /* .cir {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 100px;
+    padding-top: 100px;
+  }
+  .circle {
+    width: 30px;
+    height: 30px;
+  } */
+}
+@media screen and (max-width: 1150px) {
+  .workbackground {
+    margin: 0 5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .container-img {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tag-buttons2 {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    margin-bottom: 10px;
+  }
+  .textundertext {
+    text-align: left;
+  }
+  .activetagbutton {
+    text-align: left;
+  }
+  .buttontag2 {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  .tag-button {
+    font-size: 50px;
+  }
+  .tagactivebutton {
+    font-size: 56px;
+  }
+  .textundertext {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .workbackground {
+    margin: 0 2rem;
+  }
+  .workheading {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+  }
+  .tag-button {
+    font-size: 18px;
+  }
+  .tagactivebutton {
+    font-size: 27px;
+  }
+  .buttontag2 {
+    display: flex;
+    gap: 10px;
+  }
+  .activetagbutton {
+    font-size: 27px;
+  }
+}

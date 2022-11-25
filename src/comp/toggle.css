@@ -1,0 +1,73 @@
+.container2 {
+  margin: 0 14rem;
+  margin-bottom: 150px;
+}
+.button1 {
+  display: flex;
+  justify-content: space-between;
+  cursor: pointer;
+  text-align: center;
+}
+.toggleStyle {
+  opacity: 0.3;
+}
+.toggleStyle:hover {
+  opacity: 1;
+  transition: 0.5s;
+}
+.toggleStyle::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffae00;
+  transition: width 0.3s;
+}
+.toggleStyle:hover::after {
+  width: 100%;
+}
+/* .active {
+  color: blue;
+} */
+.active1::after {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffae00;
+  transition: width 0.3s;
+  width: 100%;
+}
+.first-text {
+  height: 100%;
+  /* position: fixed; */
+  width: 100%;
+  object-fit: contain;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+#firstimg {
+  height: 700px;
+  width: 1000px;
+  margin-left: -200px;
+}
+.texting {
+  font-size: 24px;
+  font-weight: 400;
+  line-height: 2;
+}
+.mySwiper {
+  display: none;
+}
+
+@media screen and (min-width: 1241px) and (max-width: 1630px) {
+  .first-text {
+    flex-direction: column;
+  }
+  #firstimg {
+    height: 700px;
+    width: 1000px;
+    margin-left: 0px;
+  }
+}

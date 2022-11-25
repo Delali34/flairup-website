@@ -1,0 +1,225 @@
+.work-background {
+  background-color: #1e1e1e;
+}
+/* .tags {
+  margin: 0 18rem;
+} */
+.containers {
+  width: 100%;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 130px;
+  margin-bottom: 150px;
+}
+.image-card {
+  border-radius: 2px;
+  cursor: pointer;
+}
+.image {
+  width: 100%;
+}
+
+.image-card {
+  /* [1.1] Set it as per your need */
+  overflow: hidden; /* [1.2] Hide the overflowing of child elements */
+}
+
+/* [2] Transition property for smooth transformation of images */
+.image-card img {
+  transition: 0.5s ease;
+}
+
+/* [3] Finally, transforming the image when container gets hovered */
+.image-card img:hover {
+  transform: scale(1.3);
+}
+
+.workhead {
+  text-align: left;
+  color: white;
+  font-size: 40px;
+  margin-bottom: 120px;
+  padding-top: 70px;
+}
+.tag {
+  outline: none;
+  border: none;
+  background: #1e1e1e;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  opacity: 0.5;
+  transition: 0.3s ease-in;
+}
+.tag:hover {
+  opacity: 1;
+}
+.tagactive {
+  outline: none;
+  border: none;
+  background: #1e1e1e;
+  color: white;
+  font-size: 25px;
+  cursor: pointer;
+  transition: 0.3s ease-in;
+  opacity: 1;
+}
+.tag-buttons {
+  display: flex;
+  gap: 10%;
+  padding: 10px;
+  margin-bottom: 70px;
+}
+.textunder {
+  text-align: center;
+  font-size: 70px;
+  opacity: 0;
+  transition: 00.3s ease-in;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+  cursor: pointer;
+}
+.activetag {
+  text-align: center;
+  font-size: 70px;
+  opacity: 1;
+  transition: 00.3s ease-in;
+  color: transparent;
+  -webkit-text-stroke: 1px white;
+}
+.tag:hover + .textunder {
+  opacity: 1;
+  transform: rotateZ(360deg);
+}
+
+.tag::before {
+  content: "";
+  display: block;
+  width: 0;
+  height: 2px;
+  background: #ffae00;
+  transition: width 0.3s;
+}
+.tagactive::before {
+  content: "";
+  display: block;
+  width: 100%;
+  height: 2px;
+  background: #ffae00;
+  transition: width 0.3s;
+}
+.tag:hover::before {
+  width: 100%;
+}
+.cir {
+  display: flex;
+  justify-content: center;
+  padding-bottom: 100px;
+}
+.lol {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 20px;
+  border: 2px solid white;
+  width: 150px;
+  height: 150px;
+  border-radius: 100%;
+  cursor: pointer;
+  color: white;
+}
+.circle {
+  width: 20px;
+  height: 20px;
+  background-color: #ffae00;
+  border-radius: 50%;
+  position: absolute;
+  overflow: hidden;
+  margin: auto;
+  -webkit-animation: circle 5s linear infinite;
+  animation: circle 5s linear infinite;
+}
+@-webkit-keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-72px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translate(-72px) rotate(0deg);
+  }
+}
+@keyframes circle {
+  0% {
+    transform: rotate(0deg) translate(-72px) rotate(0deg);
+  }
+  100% {
+    transform: rotate(-360deg) translate(-72px) rotate(0deg);
+  }
+}
+@media screen and (max-width: 1350px) {
+  .containers {
+    gap: 70px;
+  }
+}
+.tags {
+  margin: 0 8rem;
+}
+
+@media screen and (max-width: 1150px) {
+  .tags {
+    margin: 0 5rem;
+  }
+}
+@media screen and (max-width: 1024px) {
+  .containers {
+    grid-template-columns: repeat(1, 1fr);
+  }
+  .tag-buttons {
+    display: flex;
+    flex-direction: column;
+    gap: 3%;
+    margin-bottom: 10px;
+  }
+  .textunder {
+    text-align: left;
+  }
+  .activetag {
+    text-align: left;
+  }
+  .buttontag {
+    display: flex;
+    gap: 30px;
+    margin-bottom: 20px;
+  }
+  .tag {
+    font-size: 50px;
+  }
+  .tagactive {
+    font-size: 56px;
+  }
+  .textunder {
+    font-size: 30px;
+  }
+}
+@media screen and (max-width: 575px) {
+  .tags {
+    margin: 0 2rem;
+  }
+  .workhead {
+    font-size: 16px;
+    margin-bottom: 20px;
+    padding-top: 30px;
+  }
+  .tag {
+    font-size: 18px;
+  }
+  .tagactive {
+    font-size: 27px;
+  }
+  .buttontag {
+    display: flex;
+    gap: 10px;
+  }
+  .activetag {
+    font-size: 27px;
+  }
+}
