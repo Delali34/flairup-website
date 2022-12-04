@@ -2,7 +2,7 @@ import React, { useState, useEffect } from "react";
 import { Link } from "react-router-dom";
 
 import "./ourworks.css";
-import { SRLWrapper } from "simple-react-lightbox";
+// import { SRLWrapper } from "simple-react-lightbox";
 const images = [
   { id: "1", imageName: "img1.webp", tag: "Artworks" },
   { id: "1", imageName: "img2.webp", tag: "Artworks" },
@@ -66,21 +66,21 @@ const OurWorks = () => {
           </div>
         </div>
 
-        <SRLWrapper>
-          <div className="containers">
-            {filteredImages.map((image) => (
-              <div data-aos="zoom-in" key={image.id} className="image-card">
-                <a href={`/images/${image.imageName}`}>
-                  <img
-                    className="image"
-                    src={`/images/${image.imageName}`}
-                    alt=""
-                  />
-                </a>
-              </div>
-            ))}
-          </div>
-        </SRLWrapper>
+        {/* <SRLWrapper> */}
+        <div className="containers">
+          {filteredImages.map((image) => (
+            <div data-aos="zoom-in" key={image.id} className="image-card">
+              <a href={`/images/${image.imageName}`}>
+                <img
+                  className="image"
+                  src={`/images/${image.imageName}`}
+                  alt=""
+                />
+              </a>
+            </div>
+          ))}
+        </div>
+        {/* </SRLWrapper> */}
 
         <div data-aos="fade-up" data-aos-duration="1000" className="cir">
           <a href="/work">

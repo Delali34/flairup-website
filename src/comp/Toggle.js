@@ -3,8 +3,8 @@ import second from "../asset/second.webm";
 import strate from "../asset/strate.webm";
 import get from "../asset/get.webm";
 import last from "../asset/last.webm";
-import "swiper/css";
-import "swiper/css/navigation";
+// import "swiper/css";
+// import "swiper/css/navigation";
 
 import "./toggle.css";
 import "./What.css";

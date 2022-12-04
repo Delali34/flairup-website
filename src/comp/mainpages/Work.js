@@ -1,7 +1,6 @@
 import React, { useState, useEffect } from "react";
 
 import "./work.css";
-import { SRLWrapper } from "simple-react-lightbox";
 const images = [
   { id: "1", imageName: "img3.webp", tag: "Websites" },
   { id: "1", imageName: "img1.webp", tag: "Artworks" },
@@ -79,21 +78,20 @@ const Work = () => {
           </div>
         </div>
       </div>
-      <SRLWrapper>
-        <div className="container-img">
-          {filteredImages.map((image) => (
-            <div data-aos="zoom-in" key={image.id} className="image-card2">
-              <a href={`/images/${image.imageName}`}>
-                <img
-                  className="image"
-                  src={`/images/${image.imageName}`}
-                  alt=""
-                />
-              </a>
-            </div>
-          ))}
-        </div>
-      </SRLWrapper>
+
+      <div className="container-img">
+        {filteredImages.map((image) => (
+          <div data-aos="zoom-in" key={image.id} className="image-card2">
+            <a href={`/images/${image.imageName}`}>
+              <img
+                className="image"
+                src={`/images/${image.imageName}`}
+                alt=""
+              />
+            </a>
+          </div>
+        ))}
+      </div>
     </div>
   );
 };
