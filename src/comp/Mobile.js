@@ -11,7 +11,7 @@ import strate from "../asset/strate.webp";
 import get from "../asset/get.webp";
 import last from "../asset/last.webp";
 
-// import "swiper/css";
+import "swiper/css";
 
 const Carousel = () => {
   const swiperRef = useRef();
@@ -27,9 +27,9 @@ const Carousel = () => {
         <SwiperSlide className="rule1">
           <div className="next mobile-buttons">
             <h1 className="unearth">1. Unearth</h1>
-            {/* <button onClick={() => swiperRef.current?.slideNext()}>
+            <button onClick={() => swiperRef.current?.slideNext()}>
               <img src={right} alt="" />
-            </button> */}
+            </button>
           </div>
           <div className="second">
             <img src={second} alt="" id="second" />
@@ -45,12 +45,12 @@ const Carousel = () => {
           <div className="next mobile-buttons">
             <h1 className="unearth">2. Strategize</h1>
             <div className="mobile-button">
-              {/* <button onClick={() => swiperRef.current?.slidePrev()}>
+              <button onClick={() => swiperRef.current?.slidePrev()}>
                 <img src={left} alt="" />
               </button>
               <button onClick={() => swiperRef.current?.slideNext()}>
                 <img src={right} alt="" />
-              </button> */}
+              </button>
             </div>
           </div>
           <div className="second">
@@ -67,12 +67,12 @@ const Carousel = () => {
           <div className="next mobile-buttons">
             <h1 className="unearth">3. Create</h1>
             <div className="mobile-button">
-              {/* <button onClick={() => swiperRef.current?.slidePrev()}>
+              <button onClick={() => swiperRef.current?.slidePrev()}>
                 <img src={left} alt="" />
               </button>
               <button onClick={() => swiperRef.current?.slideNext()}>
                 <img src={right} alt="" />
-              </button> */}
+              </button>
             </div>
           </div>
           <div className="second">
@@ -89,9 +89,9 @@ const Carousel = () => {
           <div className="next mobile-buttons">
             <h1 className="unearth">4. Delivery</h1>
             <div className="mobile-button">
-              {/* <button onClick={() => swiperRef.current?.slidePrev()}>
+              <button onClick={() => swiperRef.current?.slidePrev()}>
                 <img src={left} alt="" />
-              </button> */}
+              </button>
             </div>
           </div>
           <div className="second">
